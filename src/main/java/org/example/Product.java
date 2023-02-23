@@ -8,8 +8,6 @@ public class Product {
     private Integer pieces;
     private String unitOfMeasurement;
 
-    public Product() {
-    }
 
     public Product(Integer id, String name,
                    String description, Integer price,
@@ -62,6 +60,31 @@ public class Product {
 
     public String getUnitOfMeasurement() {
         return unitOfMeasurement;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Product product)) return false;
+
+        if (!getId().equals(product.getId())) return false;
+        if (getName() != null ? !getName().equals(product.getName()) : product.getName() != null) return false;
+        if (getDescription() != null ? !getDescription().equals(product.getDescription()) : product.getDescription() != null)
+            return false;
+        if (getPrice() != null ? !getPrice().equals(product.getPrice()) : product.getPrice() != null) return false;
+        if (getPieces() != null ? !getPieces().equals(product.getPieces()) : product.getPieces() != null) return false;
+        return getUnitOfMeasurement() != null ? getUnitOfMeasurement().equals(product.getUnitOfMeasurement()) : product.getUnitOfMeasurement() == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getId().hashCode();
+        result = 31 * result + (getName() != null ? getName().hashCode() : 0);
+        result = 31 * result + (getDescription() != null ? getDescription().hashCode() : 0);
+        result = 31 * result + (getPrice() != null ? getPrice().hashCode() : 0);
+        result = 31 * result + (getPieces() != null ? getPieces().hashCode() : 0);
+        result = 31 * result + (getUnitOfMeasurement() != null ? getUnitOfMeasurement().hashCode() : 0);
+        return result;
     }
 
     @Override
