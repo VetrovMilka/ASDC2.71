@@ -1,16 +1,14 @@
 package org.example;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.IOException;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) throws FileNotFoundException {
-        BufferedReader reader = new BufferedReader(new FileReader("Products.csv"));
+    public static void main(String[] args) throws IOException {
 
-        List<Product> products = Service.readData(reader);
-
+        Product product = new Product(27, "Макароны", "Макароны", 50, 122, "piece");
+        Service.writeData("Products.csv", product);
+        List<Product> products = Service.readData("Products.csv");
         products.forEach(System.out::println);
     }
 

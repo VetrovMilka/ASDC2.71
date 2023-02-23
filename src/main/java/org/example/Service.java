@@ -1,7 +1,7 @@
 package org.example;
 
-import java.io.BufferedReader;
-import java.io.IOException;
+import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,20 +25,27 @@ public class Service {
         return null;
     }
 
-    public static List<Product> readData(BufferedReader reader) {
+    public static List<Product> readData(String path) throws IOException {
+        BufferedReader reader = new BufferedReader(new FileReader(path, StandardCharsets.UTF_8));
         String data;
         List<Product> result = new ArrayList<>();
         try {
             while((data = reader.readLine()) != null) {
+                data = data.replaceAll("\\p{C}", "");
                 Product product = Service.read(data);
                 result.add(product);
             }
-
         } catch(IOException e) {
             System.out.println(e.getMessage());
             e.printStackTrace();
         }
         return result;
+    }
+
+    public static void writeData(String path, Product product) throws IOException {
+        BufferedWriter writer = new BufferedWriter(new FileWriter(path, true));
+        writer.append("\n").append(product.toString());
+        writer.close();
     }
 
 }

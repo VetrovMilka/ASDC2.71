@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61f0bf43-0579-454d-ae9d-33362fc8b698" name="Changes" comment="Logic is working, exception while parsing first id">
+    <list default="true" id="61f0bf43-0579-454d-ae9d-33362fc8b698" name="Changes" comment="Equals and hashcode methods added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Products.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Products.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Service.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1677165062182</updated>
-      <workItem from="1677165063604" duration="3390000" />
+      <workItem from="1677165063604" duration="7011000" />
     </task>
     <task id="LOCAL-00001" summary="Logic is working, exception while parsing first id">
       <created>1677167467504</created>
@@ -99,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677168178340</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Equals and hashcode methods added">
+      <created>1677168734281</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677168734281</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,21 +130,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Logic is working, exception while parsing first id" />
-    <option name="LAST_COMMIT_MESSAGE" value="Logic is working, exception while parsing first id" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Service.java</url>
-          <line>10</line>
-          <properties class="org.example.Service" method="read">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Equals and hashcode methods added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Equals and hashcode methods added" />
   </component>
 </project>

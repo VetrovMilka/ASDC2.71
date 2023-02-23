@@ -89,13 +89,12 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                ", price=" + price +
-                ", pieces=" + pieces +
-                ", unitOfMeasurement='" + unitOfMeasurement + '\'' +
-                '}';
+        return
+                id +
+                ";" + name +
+                ";" + description +
+                ";" + price +
+                ";" + pieces +
+                ";" + unitOfMeasurement;
     }
 }
